@@ -1,5 +1,3 @@
-cd ~/cloud-computing/cc/coursework-mingle/src/controllers
-cat > postController.js << 'EOF'
 const Joi = require('joi');
 const Post = require('../models/post');
 
@@ -163,5 +161,4 @@ exports.historyByTopic = async (req, res) => {
     res.status(500).json({ error: 'could not access history', details: err.message });
   }
 };
-EOF
 

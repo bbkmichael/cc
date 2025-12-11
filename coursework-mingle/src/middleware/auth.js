@@ -1,5 +1,3 @@
-cd ~/cloud-computing/cc/coursework-mingle/src/middleware
-cat > auth.js << 'EOF'
 const jwt = require('jsonwebtoken');
 
 // verifin access token
@@ -20,5 +18,5 @@ module.exports = function(req, res, next) {
     return res.status(401).json({ error: 'no valid or expired token' });
   }
 };
-EOF
+
 

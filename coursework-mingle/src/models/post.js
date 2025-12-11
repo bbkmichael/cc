@@ -1,5 +1,3 @@
-cd ~/cloud-computing/cc/coursework-mingle/src/models
-cat > post.js << 'EOF'
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
@@ -29,5 +27,4 @@ postSchema.methods.updateStatus = function() {
 };
 
 module.exports = mongoose.model('Post', postSchema);
-EOF
 

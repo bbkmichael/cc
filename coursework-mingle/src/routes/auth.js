@@ -1,5 +1,3 @@
-cd ~/cloud-computing/cc/coursework-mingle/src/routes
-cat > auth.js << 'EOF'
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const Joi = require('joi');
@@ -69,5 +67,4 @@ router.post('/login', async (req, res) => {
 });
 
 module.exports = router;
-EOF
 
